@@ -12,47 +12,67 @@
 
     	  <title>portf/index</title>
 
-        <!--
-    	  <link rel="stylesheet" href="m.css">
-        -->
-
     <style>
         @font-face{
         font-family: 'CanelaText';
         src: url('CanelaText-Medium.woff2') format('woff2'),
         url('CanelaText-Medium.woff') format('woff'),
+        url('CanelaText-Light.woff2') format('woff2'),
+        url('CanelaText-Light.woff') format('woff'),
         url('CanelaText-LightItalic.woff2') format('woff2'),
         url('CanelaText-LightItalic.woff') format('woff')
         }
 
         body {
-        font-family: "CanelaText", "CanelaText-Medium", "Arial", sans-serif;
+        font-family: "CanelaText", "Arial", sans-serif;
         font-size: 36pt;
         line-height: 1.1em;
         }
 
         h1 {
         text-transform: uppercase;
-        font-weight: normal;
+        font-weight: bold;
         line-height: 1em;
         max-width: 800pt;
-        margin: 0 auto;
+        margin: 20px auto;
         text-align: center;
         color: #ff4100;
         }
 
-        span {
+        header {
+        color: #ff2efb;
+        padding-left: 25px;
+        padding-bottom: 50px;
+        border: 1px #33ff00;
+        }
+
+        mark {
+        background-color: #ff2efb;
+        padding: 0.05px;
+        }
+
+        p {
+        padding-left: 25px;
+        }
+
+        p span {
         color: #ff4100;
         }
 
         a {
-        color: $000;
+        color: #0004ff;
         text-decoration: none;
         }
 
         a:after {
         content: "↗︎";
         font-size: .8em;
+        }
+
+        footer p {
+        font-variant: small-caps;
+        font-weight: lighter;
+        line-height: 0.825em;
         }
 
         footer p a:after {
@@ -69,7 +89,7 @@
 
         ul {
         padding-left: 50px;
-        max-width: 85%;
+        max-width: 82%;
         margin: 0 auto;
         }
 
@@ -80,7 +100,26 @@
 
         small {
         display: block;
-        font-size: .8em;
+        font-size: 0.825em;
+        }
+
+        footer small {
+        display: block;
+        color: #33ff00;
+        font: 'CanelaText-LightItalic';
+        font-style: italic;
+        font-size: .825em;
+        text-align: center;
+        }
+
+        .bg {
+        background-image: url("./whipit.png");
+        background-position: top bottom;
+        background-size: contain;
+        }
+
+        hr {
+        color: #0004ff;
         }
 
         @media only screen and (max-width: 790px) {
@@ -113,34 +152,38 @@
         }
     </style>
 
-
     </head>
 
     <body>
         <header>
-            <small><a href="./index.html">portf/index</a></small>
+            <container>
+                <small><a href="./index.html">portf/index</a></small>
+            </container>
         </header>
-        <ul>
-            <li><span>texts</span> there will be more to come</li>
-            <li><span>links</span> inspiring/fascinating things i've found</li>
-        </ul>
-
+        <!-- <button type="button" name="colorSwap">(#)</button> -->
         <main>
-            <h1>Ranch</h1> <p>is currently <span>homeless</span> in the Seattle metropolitan area.</p>
+            <h1>Ranch</h1> <p>is presently <span>homeless</span> in the Seattle metropolitan area.</p>
         </main>
-
+        <ul>
+            <li><span>nobody knows</span> how things ever got this bad</li>
+            <li><span>only money</span> will make them better again</li>
+   <!-- <li><span>texts</span> there will be more to come</li>
+        <li><span>links</span> inspiring/fascinating things i've found</li>   -->
+        </ul>
         <nav>
             <small>
                 <ul>
                     <li><a href="mailto:chaseloganrandall@gmail.com" rel="nofollow">e-mail</a></li>
-                    <li><a href="https://github.com/rancha-cr">github.com</a></li>
+                    <li><a href="http://registry.jsonresume.org/rancha-cr" rel="nofollow">cv</a></li>
                 </ul>
             </small>
         </nav>
-
-        <footer>
-            <p>*** </p>
-            <p>site in progress.</p>
-            <small>built as a single HTML document</small>
-        </footer>
+        <hr/>
+        <!-- <div class="bg"> -->
+            <footer>
+                <p>( site in progress )</p>
+                <small>fuck it</small>
+            </footer>
+        <!-- </div> -->
+        <script src="index.js"></script>
     </body>
