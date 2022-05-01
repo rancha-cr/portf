@@ -1,5 +1,146 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="author" content="ranch"/>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="ranch"/>
+        <meta property="og:title" content="portf/index"/>
+        <meta property="og:site_name" content="portf.html"/>
+        <meta name="robots" content="index, follow">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="a small portfolio website.">
+        <meta property="og:description" content="a small portfolio website."/>
+
+    	  <title>portf/index</title>
+
+        <!--
+    	  <link rel="stylesheet" href="m.css">
+        -->
+
+    <style>
+        @font-face{
+        font-family: 'CanelaText';
+        src: url('CanelaText-Medium.woff2') format('woff2'),
+        url('CanelaText-Medium.woff') format('woff'),
+        url('CanelaText-LightItalic.woff2') format('woff2'),
+        url('CanelaText-LightItalic.woff') format('woff')
+        }
+
+        body {
+        font-family: "CanelaText", "CanelaText-Medium", "Arial", sans-serif;
+        font-size: 36pt;
+        line-height: 1.1em;
+        }
+
+        h1 {
+        text-transform: uppercase;
+        font-weight: normal;
+        line-height: 1em;
+        max-width: 800pt;
+        margin: 0 auto;
+        text-align: center;
+        color: #ff4100;
+        }
+
+        span {
+        color: #ff4100;
+        }
+
+        a {
+        color: $000;
+        text-decoration: none;
+        }
+
+        a:after {
+        content: "↗︎";
+        font-size: .8em;
+        }
+
+        footer p a:after {
+        content: "";
+        }
+
+        a:hover {
+        color: #ff5e0d;
+        }
+
+        ul li span {
+        color: #ff4100;
+        }
+
+        ul {
+        padding-left: 50px;
+        max-width: 85%;
+        margin: 0 auto;
+        }
+
+        ul li {
+        margin-bottom: .5em;
+        padding-bottom: .25em;
+        }
+
+        small {
+        display: block;
+        font-size: .8em;
+        }
+
+        @media only screen and (max-width: 790px) {
+        body {
+        font-size: 28pt;
+        }
+        }
+
+        @media only screen and (max-width: 630px) {
+        body {
+        font-size: 22pt;
+        }
+
+        ul {
+        padding-left: 30px;
+        max-width: 90%;
+        }
+        }
+
+        @media only screen and (max-width: 495px) {
+        body {
+        font-size: 18pt;
+        }
+        }
+
+        @media only screen and (max-width: 420px) {
+        body {
+        font-size: 14pt
+        }
+        }
+    </style>
+
+
+    </head>
+
+    <body>
+        <header>
+            <small><a href="./index.html">portf/index</a></small>
+        </header>
+        <ul>
+            <li><span>texts</span> there will be more to come</li>
+            <li><span>links</span> inspiring/fascinating things i've found</li>
+        </ul>
+
+        <main>
+            <h1>Ranch</h1> <p>is currently <span>homeless</span> in the Seattle metropolitan area.</p>
+        </main>
+
+        <nav>
+            <small>
+                <ul>
+                    <li><a href="mailto:chaseloganrandall@gmail.com" rel="nofollow">e-mail</a></li>
+                    <li><a href="https://github.com/rancha-cr">github.com</a></li>
+                </ul>
+            </small>
+        </nav>
+
+        <footer>
+            <p>*** </p>
+            <p>site in progress.</p>
+            <small>built as a single HTML document</small>
+        </footer>
+    </body>
